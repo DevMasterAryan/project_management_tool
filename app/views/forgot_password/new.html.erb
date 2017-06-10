@@ -1,0 +1,6 @@
+<%= form_tag(forgetpassword_path, method: :post) do%>
+<%= label_tag :email, "enter your registered mail"%><br/>
+<%= text_field_tag :email%>
+<br/>
+<%= submit_tag "send link"%>
+<%end%>

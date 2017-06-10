@@ -1,0 +1,14 @@
+
+<%= form_for(:session, url: session_index_path) do|f| %>
+  <p>
+    <%= f.label :login, "Username/Email" %><br />
+    <%= f.text_field :user_name%>
+  </p>
+  <p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+  </p>
+  <p><%= f.submit "Log in" %>
+  <%= link_to "forgot password", forgetpassword_path %></p>
+<% end %>
+<p> New user?<%= link_to "sign up", new_user_path%>
