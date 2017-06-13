@@ -5,6 +5,8 @@ class Project < ApplicationRecord
 
 	#belongs_to :user
 	has_many :tasks, foreign_key: :task_project_id
+	has_many :user_task, foreign_key: :assigned_task_id
+	
 
 
 
